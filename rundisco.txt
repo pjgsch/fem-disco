@@ -1,0 +1,24 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Assuming we are in the 'root' of 'disco', where you see the directories
+% 'disco*' and the template files 'rundisco1.mm' and 'rundisco2.mm'.
+
+% Goto a place where you can run the models, e.g. directory './run'.
+% (Make it if it does not exist.)
+% Start Matlab (or Octave)
+
+cd './run'
+
+% Adapt path to find program and input files.
+
+path('../disco1',path);
+path('../disco1I',path);
+path('../disco2',path);
+path('../disco2I',path);
+
+% Make subdirectory 'mat' where you run the models.
+
+if ~exist('mat/'), mkdir('mat/'); end;
+
+% When you are finished you might want to remove './run'.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
